@@ -3,13 +3,21 @@ header {
   border-bottom: 10px solid $main-dark-colour;
   padding: 20px;
 
+  h1 {
+    margin: 0;
+  }
+
+  h2 {
+    margin-bottom: 0;
+  }
+
   @media screen and (min-width: $mid-size) {
     border: 10px solid $main-dark-colour;
-  }
-}
 
-h1, h2 {
-  margin: 0;
+    h2 {
+      margin-top: 0;
+    }
+  }
 }
 
 #header__align-left {
