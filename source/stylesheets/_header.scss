@@ -1,0 +1,21 @@
+header {
+  margin: 0;
+  border-bottom: 10px solid $main-dark-colour;
+  padding: 20px;
+
+  @media screen and (min-width: $mid-size) {
+    border: 10px solid $main-dark-colour;
+  }
+}
+
+h1, h2 {
+  margin: 0;
+}
+
+#header__align-left {
+  text-align: left;
+}
+
+#header__align-right {
+  text-align: right;
+}
