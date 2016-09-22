@@ -1,13 +1,21 @@
-@charset "utf-8";
-@import "normalize";
+@charset 'utf-8';
+@import 'normalize';
+@import 'variables';
+@import 'header';
 
-$main-light-colour: #EDE2D7;
-$main-dark-colour: #1B150D;
+html {
+  max-width: 800px;
+  margin: 0 auto;
+}
 
 body {
   background: $main-light-colour;
   color: $main-dark-colour;
   text-align: center;
-  font-family: "Open Sans", "Segoe UI", Tahoma, sans-serif;
+  font-family: 'Open Sans', 'Segoe UI', Tahoma, sans-serif;
   font-size: 1em;
+
+  @media screen and (min-width: $mid-size) {
+    margin: 20px 0 0 0;
+  }
 }
