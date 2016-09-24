@@ -13,9 +13,10 @@ body {
   color: $main-dark-colour;
   font-family: 'Open Sans', 'Segoe UI', Tahoma, sans-serif;
   font-size: 1.2em;
+  margin: 0 0 20px 0;
 
   @media screen and (min-width: $mid-size) {
-    margin: 20px 0 0 0;
+    margin: 20px 0 20px 0;
   }
 }
 
@@ -26,6 +27,14 @@ body {
 
   #article__heading {
     margin: 20px 0 10px 0;
+  }
+}
+
+article, aside {
+  padding: 0 20px 0 20px;
+
+  @media screen and (min-width: $mid-size) {
+    padding: 0;
   }
 }
 

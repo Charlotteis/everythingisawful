@@ -23,9 +23,11 @@ per_page: 10
 <% end %>
 
 <% page_articles.each_with_index do |article, i| %>
-  <h2 class='article__heading'><%= link_to article.title, article %></h2>
-  <span>Posted on <%= article.date.strftime('%b %e') %></span>
-  <%= article.body %>
+  <article>
+    <h2 class='article__heading'><%= link_to article.title, article %></h2>
+    <span>Posted on <%= article.date.strftime('%b %e') %></span>
+    <%= article.body %>
+  </article>
 <% end %>
 
 <% if paginate %>
