@@ -11,11 +11,45 @@ html {
 body {
   background: $main-light-colour;
   color: $main-dark-colour;
-  text-align: center;
   font-family: 'Open Sans', 'Segoe UI', Tahoma, sans-serif;
-  font-size: 1em;
+  font-size: 1.2em;
 
   @media screen and (min-width: $mid-size) {
     margin: 20px 0 0 0;
+  }
+}
+
+#main {
+  margin: 0 0 20px 0;
+  padding: 0 0 20px 0;
+  border-bottom: 5px solid $main-dark-colour;
+
+  #article__heading {
+    margin: 20px 0 10px 0;
+  }
+}
+
+aside {
+  h2 {
+    margin: 10px 0 10px 0;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    list-style-type: none;
+  }
+}
+
+a {
+  color: $main-dark-colour;
+  text-decoration: none;
+  border-bottom: 1px solid $main-dark-colour;
+
+  &:focus, &:hover, &:active {
+    border-bottom: 3px solid $main-dark-colour;
   }
 }
