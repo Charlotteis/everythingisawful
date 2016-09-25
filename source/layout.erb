@@ -12,6 +12,22 @@
     <%= javascript_include_tag :all %>
   </head>
   <body>
+    <header>
+      <h1 id='header__align-left'>
+        everything<br>
+        is<br>
+        awful<br>
+      </h1>
+      <h2 id='header__align-right'>
+        an optimistic podcast
+      </h2>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href='/'>Home</li>
+      </ul>
+    </nav>
 
     <div id='main' role='main'>
       <%= yield %>
